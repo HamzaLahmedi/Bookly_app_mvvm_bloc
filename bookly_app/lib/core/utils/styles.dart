@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 abstract class Styles {
-  static const textStyle22 = TextStyle(
+  static TextStyle  textStyle22 = TextStyle(
     fontSize: 22,
     fontWeight: FontWeight.w600,
+    fontFamily: GoogleFonts.openSans.toString(),
   );
 
   static TextStyle textStyle24 = TextStyle(
