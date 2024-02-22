@@ -1,3 +1,4 @@
+import 'package:bookly_app/core/utils/app_router.dart';
 import 'package:bookly_app/core/utils/assets.dart';
 import 'package:bookly_app/features/splash/presentation/views/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
@@ -64,7 +65,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   void navigateToHome() {
     Future.delayed(const Duration(seconds: 2), () {
-      GoRouter.of(context).push('/HomeView');
+      GoRouter.of(context).push(AppRouter.kHomeView);
     });
   }
 
