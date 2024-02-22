@@ -8,17 +8,20 @@ class BookDetailsBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
-    return SafeArea(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 30),
-        child: Column(
-          children: [
-            const CustomBookDetailsAppBar(),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: width * .2),
-              child: const CustomBookItem(),
-            )
-          ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 30),
+      child: Column(
+        children: [
+          const CustomBookDetailsAppBar(),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: width * .17),
+            child: const CustomBookItem(),
+          ),
+          const SizedBox(
+            height: 60,
+          ),
+           
+        ],
         ),
       ),
     );
