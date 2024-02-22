@@ -18,7 +18,7 @@ abstract class Styles {
     fontWeight: FontWeight.normal,
     fontFamily: GoogleFonts.openSans.toString(),
   );
-  static TextStyle textStyle30 = TextStyle(
+  static   TextStyle textStyle30 = TextStyle(
     fontSize: 30,
     fontWeight: FontWeight.normal,
     fontFamily: GoogleFonts.openSans.toString(),

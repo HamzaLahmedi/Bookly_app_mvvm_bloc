@@ -61,6 +61,7 @@ class BestSellerListViewItem extends StatelessWidget {
                       'J.K Rowling',
                       style: Styles.textStyle16,
                     ),
+                    
                     Row(
                       children: [
                         Text('19.99£', style: Styles.textStyle22),
