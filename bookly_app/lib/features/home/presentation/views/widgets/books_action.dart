@@ -38,7 +38,8 @@ class BooksAction extends StatelessWidget {
               
               buttonText: 'Free Preview',
               textStyle: Styles.textStyle22.copyWith(
-                color: Colors.black
+                color: Colors.black,
+                fontWeight: FontWeight.w400,
               ),
             ),
           ),
