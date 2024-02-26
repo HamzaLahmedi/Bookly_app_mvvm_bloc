@@ -13,7 +13,9 @@ class BooksListView extends StatelessWidget {
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) {
-            return const CustomBookItem();
+            return const CustomBookItem(
+              imageUrl: 'https://www.rawpixel.com/search/book%20stack?page=1&path=_topics&sort=curated',
+            );
           },
         ),
       ),

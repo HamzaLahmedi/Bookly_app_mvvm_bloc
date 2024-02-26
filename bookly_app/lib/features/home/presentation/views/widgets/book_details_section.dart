@@ -15,7 +15,9 @@ class BookDetailsSection extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * .17),
-          child: const CustomBookItem(),
+          child: const CustomBookItem(
+            imageUrl: 'https://www.rawpixel.com/search/book%20stack?page=1&path=_topics&sort=curated',
+          ),
         ),
         const SizedBox(
           height: 60,
