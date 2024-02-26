@@ -4,8 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class RatingBookSellerItem extends StatelessWidget {
-  const RatingBookSellerItem({super.key,  this.mainAxisAlignment=MainAxisAlignment.start});
+  const RatingBookSellerItem({super.key,  this.mainAxisAlignment=MainAxisAlignment.start, required this.rating,  required this.langue});
 final MainAxisAlignment mainAxisAlignment;
+final int rating;
+final String langue;
   @override
   Widget build(BuildContext context) {
     
@@ -21,7 +23,7 @@ final MainAxisAlignment mainAxisAlignment;
           width: 6.3,
         ),
         Text(
-          '4.8',
+          rating.toString(),
           style: Styles.textStyle16,
         ),
         const SizedBox(
@@ -30,7 +32,7 @@ final MainAxisAlignment mainAxisAlignment;
         Opacity(
           opacity: .5,
           child: Text(
-            '(2556)',
+            langue,
             style: Styles.textStyle16.copyWith(
               
             ),

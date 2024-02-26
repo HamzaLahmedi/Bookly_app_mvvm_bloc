@@ -12,7 +12,8 @@ class SearchResultListView extends StatelessWidget {
       itemCount: 15,
       padding: EdgeInsets.zero,
       itemBuilder: (context, index) {
-        return const BestSellerListViewItem();
+       // return const BestSellerListViewItem();
+       return Text('data');
       },
     );
   }
