@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class BooksListView extends StatelessWidget {
-  const BooksListView({Key? key});
+  const BooksListView({super.key,  });
 
   @override
   Widget build(BuildContext context) {
@@ -18,10 +18,12 @@ class BooksListView extends StatelessWidget {
             return SizedBox(
               height: MediaQuery.of(context).size.height * .13,
               child: ListView.builder(
+                itemCount: state.books.length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return const CustomBookItem(
-                    imageUrl: 'https://www.rawpixel.com/search/book%20stack?page=1&path=_topics&sort=curated',
+                  
+                  return  CustomBookItem(
+                    imageUrl: state.books[index].volumeInfo.imageLinks.thumbnail,
                   );
                 },
               ),

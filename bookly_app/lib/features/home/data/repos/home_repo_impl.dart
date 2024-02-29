@@ -39,7 +39,10 @@ class HomeRepoImp implements HomeRepo {
           endPoint: 'volumes?Filtering=free-ebooks&q=computer');
       List<BookModel> books = [];
       for (var item in data['items']) {
-        books.add(BookModel.fromJson(item));
+        try {
+  books.add(BookModel.fromJson(item));
+}  catch (e) {
+}
       }
       return right(books);
     } catch (e) {
@@ -62,7 +65,7 @@ class HomeRepoImp implements HomeRepo {
    try {
       var data = await apiService.get(
           endPoint:
-              'volumes?Filtering=free-ebooks&q=programming&sorting=neweset&Sorting=relevance');
+              'volumes?Filtering=free-ebooks&q=science&sorting=neweset&Sorting=relevance');
       List<BookModel> books = [];
       for (var item in data['items']) {
         books.add(BookModel.fromJson(item));

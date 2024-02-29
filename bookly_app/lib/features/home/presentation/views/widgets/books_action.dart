@@ -7,35 +7,31 @@ class BooksAction extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Padding(
+    return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
-      child:  Row(
+      child: Row(
         children: [
           Expanded(
             child: CustomButton(
               backgroundColor: Colors.white,
-              
-              borderRadius:const BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 bottomLeft: Radius.circular(12),
                 topLeft: Radius.circular(12),
               ),
-              buttonText: '19.99£',
+              buttonText: 'Free',
               textStyle: Styles.textStyle22.copyWith(
-            color: Colors.black,
-            fontWeight: FontWeight.w600,
-          ),
+                color: Colors.black,
+                fontWeight: FontWeight.w600,
+              ),
             ),
           ),
           Expanded(
             child: CustomButton(
-              backgroundColor:const Color(0xffEF8262),
-              
-              borderRadius:const BorderRadius.only(
+              backgroundColor: const Color(0xffEF8262),
+              borderRadius: const BorderRadius.only(
                 bottomRight: Radius.circular(12),
                 topRight: Radius.circular(12),
-                
               ),
-              
               buttonText: 'Free Preview',
               textStyle: Styles.textStyle22.copyWith(
                 color: Colors.black,
